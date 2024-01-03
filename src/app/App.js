@@ -2,7 +2,6 @@ import  React, { Component } from "react";
 
 import WeatherInfo from "./components/WeatherInfo";
 import WeatherForm from "./components/WeatherForm";
-
 import { WEATHER_KEY } from "./keys"; 
 
 class App extends Component{
@@ -99,9 +98,11 @@ class App extends Component{
                 <div className="row">
                     <div className="col-md-6 mx-auto"> 
                         <WeatherForm getWeather={this.getWeather}/>
-                        <WeatherInfo {...this.state}/>
-                    </div>    
+                        <WeatherInfo {...this.state}/>                    
+                    </div>  
+                   
                 </div>
+                
             </div>
         )
     }

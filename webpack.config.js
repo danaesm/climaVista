@@ -25,12 +25,16 @@ module.exports = {
                 test: /\.css$/,
                 use: [
                     //MiniCssExtractPlugin.loader,  // Cambiado 'style-loader' a MiniCssExtractPlugin.loader
-                   
                    devMode ? 'style-loader': MiniCssExtractPlugin.loader,
                    'css-loader'
 
                 ]
             },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                loader: 'file-loader',
+                
+            }
             
         ]
     },
