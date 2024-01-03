@@ -1,3 +1,4 @@
+// En WeatherForm.js
 import React from "react";
 
 const WeatherForm = (props) => (
@@ -17,11 +18,18 @@ const WeatherForm = (props) => (
           Ingresa el nombre de la ciudad para buscar el clima.
         </small>
         <button className="btn btn-success btn-block" type="submit">
-        Buscar clima
-      </button>
-      </div>
+          Buscar clima
+        </button>
 
-      
+        {/* Nuevo botón para solicitar ubicación */}
+        <button
+          className="btn btn-primary btn-block"
+          type="button"
+          onClick={props.requestLocation}
+        >
+          Obtener ubicación actual
+        </button>
+      </div>
     </form>
   </div>
 );
