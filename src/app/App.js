@@ -65,11 +65,28 @@ class App extends Component{
 
         }else{
             this.setState({
+                temperature: '',
+                day:'',
+                description: '',
+                humidity: '',
+                wind_speed: '',
+                city: '',
+                country: '',
+                hourlyForecast: [],
                 error: 'No se encontró esta ubicación'
             });
         }
         }else{
-            this.setState({error:'Por favor ingrese una ubicación'});
+            this.setState({
+                temperature: '',
+                day:'',
+                description: '',
+                humidity: '',
+                wind_speed: '',
+                city: '',
+                country: '',
+                hourlyForecast: [],
+                error:'Por favor ingrese una ubicación'});
         }
 
         

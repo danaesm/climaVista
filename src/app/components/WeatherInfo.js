@@ -11,7 +11,9 @@ const WeatherInfo = props=>{
             <div className="alert alert-danger">
             <p> {props.error}</p>
             </div>
+            
         }
+        
         {
             props.temperature ? 
 
@@ -53,7 +55,6 @@ const WeatherInfo = props=>{
          
         </div>
         }
-
         </div>
 
        
